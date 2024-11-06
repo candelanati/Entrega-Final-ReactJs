@@ -1,0 +1,115 @@
+.boton-comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px ;
+    border: 2px solid;
+    border-color: #080808;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 100px;
+    height: 35px;
+    color: #080808;
+    font-style: italic;
+    font-size: large;
+}
+.boton-comprar > svg{
+    fill: #080808;
+}
+
+.boton-comprar:hover{
+    background-color: #080808;
+    width: 100px;
+    height: 35px;
+}
+.boton-comprar:hover > svg{
+    fill: #d9d9d9;
+}
+
+.cantidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px ;
+    border: 2px solid;
+    border-color: #080808;
+    border-radius: 10px;
+    background-color: #080808;
+    width: 60px;
+    height: 30px;
+    color: #d9d9d9;
+    font-style: italic;
+    font-size: large;
+}
+
+.suma-y-resta-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.borrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px ;
+    border: 2px solid;
+    border-color: #080808;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 30px;
+    height: 30px;
+}
+.borrar > button{
+    display: flex;
+    align-items: center;
+}
+.borrar > button > svg{
+    fill: #080808;
+}
+.borrar:hover{
+    background-color: #080808;
+}
+.borrar:hover > button > svg{
+    fill: #d9d9d9;
+}
+
+.suma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px ;
+    border: 2px solid;
+    border-color: #080808;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 30px;
+    height: 30px;
+    font-size: x-large;
+    font-weight: 500;
+}
+.suma:hover{
+    background-color: #080808;
+    color: #d9d9d9;
+    font-weight: 400;
+}
+
+.resta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px ;
+    border: 2px solid;
+    border-color: #080808;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 30px;
+    height: 30px;
+    font-size: x-large;
+    font-weight: 500;
+}
+.resta:hover{
+    background-color: #080808;
+    color: #d9d9d9;
+    font-weight: 400;
+}
