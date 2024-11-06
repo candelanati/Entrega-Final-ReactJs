@@ -1,5 +1,23 @@
+.div-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .div-descripcion-entera{
     margin-inline: 170px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.titulo-descripcion{
+    margin-bottom: 20px;
+}
+.info-descripcion-producto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .div-card-poster > img{
     width: 350px;

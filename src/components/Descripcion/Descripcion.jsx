@@ -25,19 +25,30 @@ function Descripcion (){
         return <h2>Producto no encontrado</h2>;
     }
     return(
+        <>
+        <div className='div-titulo'>
+            <h1 className='titulo-descripcion'>{producto.titulo}</h1>
+        </div>
         <div className='div-descripcion-entera'>
+            
             <div className='div-card-poster'>
-                <h1>{producto.titulo}</h1>
+                
                 <img src={`/${producto.imagen}`} alt={"portada poster "+producto.titulo} />
+                
+            </div>
+            <div className='info-descripcion-producto'>
                 <h2>Detalles:</h2>
                 <p>Precio: ${producto.precio}</p>
+                <div className='descripcion-producto'>
+                    <p>Descripción: {producto.descripcion}</p>
+                </div>
+                <button className='boton-comprar'>comprar</button>
             </div>
-            <div className='descripcion-producto'>
-                <p>Descripción: {producto.descripcion}</p>
-            </div>
-            <button className='boton-comprar'>comprar</button>
+            
 
         </div>
+        </>
+        
     )
 }
 
