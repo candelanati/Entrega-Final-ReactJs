@@ -38,9 +38,19 @@
     width: 60px;
     height: 30px;
     color: #d9d9d9;
-    font-style: italic;
-    font-size: large;
+    font-size: larger;
+    font-weight: 600;
 }
+.cantidad > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.cantidad > p > svg{
+    fill: #d9d9d9;
+}
+
 
 .suma-y-resta-div{
     display: flex;
