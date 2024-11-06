@@ -1,0 +1,40 @@
+
+.cards-espacio{
+    margin-inline:280px;
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.card-posters{
+    margin-top: 20px;
+    padding: 10px;
+    /* border: 2px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.431); */
+}
+.card-posters > img{
+    height: 400px;
+    aspect-ratio: 100/141;
+    border: 10px solid;
+    border-color: rgba(0, 0, 0, 0.419);
+}
+
+.boton-ver-mas {
+    margin-top: 10px ;
+    border: 2px solid;
+    border-color: #080808;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 100px;
+    height: 35px;
+    color: #080808;
+    font-style: italic;
+    font-size: large;
+}
+.boton-ver-mas:hover{
+    background-color: #080808;
+    width: 100px;
+    height: 35px;
+    color: #d9d9d9;
+}

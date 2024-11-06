@@ -1,0 +1,26 @@
+.div-descripcion-entera{
+    margin-inline: 170px;
+}
+.div-card-poster > img{
+    width: 350px;
+    border: 20px solid;
+    border-color: rgba(0, 0, 0, 0.568);
+}
+.boton-comprar {
+    margin-top: 10px ;
+    border: 2px solid;
+    border-color: #080808;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 100px;
+    height: 35px;
+    color: #080808;
+    font-style: italic;
+    font-size: large;
+}
+.boton-comprar:hover{
+    background-color: #080808;
+    width: 100px;
+    height: 35px;
+    color: #d9d9d9;
+}
