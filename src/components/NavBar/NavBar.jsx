@@ -8,6 +8,7 @@ function NavBar() {
     return (
         <nav>
             <ul className="navClass">
+                <li><Link to="/">inicio</Link></li>
                 <Filtro>claro</Filtro>
                 <Filtro>oscuro</Filtro>
             </ul>

@@ -4,13 +4,11 @@
 .div-logo{
     position: fixed;
     top: 0px;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 25px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-    
 }
 .div-logo > p{
     font-size: small;
