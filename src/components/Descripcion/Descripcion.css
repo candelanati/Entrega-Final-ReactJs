@@ -25,6 +25,9 @@
     border-color: rgba(0, 0, 0, 0.568);
 }
 .boton-comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 10px ;
     border: 2px solid;
     border-color: #080808;
@@ -36,9 +39,15 @@
     font-style: italic;
     font-size: large;
 }
+.boton-comprar > svg{
+    fill: #080808;
+}
+
 .boton-comprar:hover{
     background-color: #080808;
     width: 100px;
     height: 35px;
-    color: #d9d9d9;
+}
+.boton-comprar:hover > svg{
+    fill: #d9d9d9;
 }
