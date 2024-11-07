@@ -17,22 +17,21 @@ function Cart (){
 
     },[itemsCarrito])
     
-            if(cantidad>=1){
-            return(
-                <>
-                    <div className='ticket-class'>
-                        <p>* * * Ticket de pedido * * *</p>
-                        <hr />
-                        <p>{cantidad} items en total</p>
-                        <br />
-                        {itemsCarrito.map(el => {
-                            console.log('en el map')
-                            return <p key={el.id}>{el.titulo} x{cantidad}</p>
-                        }) }
-                    </div>
-                </>
-            )
-        }   
+    if(cantidad >= 1) {
+        return(
+            <>
+                <div className='ticket-class'>
+                    <p>* * * Ticket de pedido * * *</p>
+                    <hr />
+                    <p>{cantidad} items en total</p>
+                    <br />
+                    {itemsCarrito.map(el => {
+                        return <p key={el.id}>{el.titulo} x{el.cantidad}</p>
+                    }) }
+                </div>
+            </>
+        )
+    }
     
     return(
         <>

@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+/* eslint-disable react/prop-types */
+import React, { createContext, useState } from "react";
 
 export const CartContext = createContext(null)
 
@@ -6,7 +7,8 @@ const CartProvider = ({children}) =>{
     const [itemsCarrito, setItemsCarrito] = useState([])
 
     const agregarCarrito = (item) =>{
-        setItemsCarrito ((prevItems) => [...prevItems, item])
+        if(item.cantidad == 0)
+            setItemsCarrito ((prevItems) => [...prevItems, item])
     }
 
     const borrarItem = (item) =>{
