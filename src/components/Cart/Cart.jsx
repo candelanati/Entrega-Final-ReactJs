@@ -26,7 +26,7 @@ function Cart (){
                     <p>{cantidad} items en total</p>
                     <br />
                     {itemsCarrito.map(el => {
-                        return <p key={el.id}>{el.titulo} x{el.cantidad}</p>
+                        return <p key={el.id}>{el.titulo} <span className="cuadro-color">({el.color})</span> x{el.cantidad}</p>
                     }) }
                 </div>
             </>

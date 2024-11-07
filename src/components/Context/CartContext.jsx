@@ -23,6 +23,7 @@ const CartProvider = ({children}) =>{
 
     const value = {
         itemsCarrito,
+        setItemsCarrito,
         agregarCarrito,
         borrarItem,
         borraCarrito
