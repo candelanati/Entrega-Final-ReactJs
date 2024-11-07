@@ -10,7 +10,7 @@ const [data, setData] = useState([])
         fetch('/productos.json')
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
+            // console.log(data);
             setData(data.Productos);
         })
         .catch((error) => console.error('Error al cargar el JSON:', error));
@@ -19,7 +19,7 @@ const [data, setData] = useState([])
     return(
         <>
             {data && data.map((producto)=>{
-                console.log(producto.titulo)
+                // console.log(producto.titulo)
                 return(
                     <ProductBox key={producto.id} producto={producto}></ProductBox>
                 )

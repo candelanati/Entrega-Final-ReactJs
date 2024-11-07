@@ -43,7 +43,7 @@ function Descripcion (){
                 <div className='descripcion-producto'>
                     <p>Descripción: {producto.descripcion}</p>
                 </div>
-                <ButtonAddCart/>
+                <ButtonAddCart item={producto}/>
             </div>
             
 
