@@ -7,7 +7,7 @@ const CartProvider = ({children}) =>{
     const [itemsCarrito, setItemsCarrito] = useState([])
 
     const agregarCarrito = (item) =>{
-        if(item.cantidad == 0)
+        if(item.cantidad == 0 && !itemsCarrito.some(user => user.id === item.id))
             setItemsCarrito ((prevItems) => [...prevItems, item])
     }
 
@@ -28,6 +28,8 @@ const CartProvider = ({children}) =>{
         borrarItem,
         borraCarrito
     }
+
+    console.log(itemsCarrito)
 
     return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }

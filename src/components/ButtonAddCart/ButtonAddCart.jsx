@@ -14,19 +14,17 @@ function ButtonAddCart ({item}){
         function sumaElemento(){
             if(cantidad<1){
                 agregarCarrito(item)
-                console.log("quedan "+item.stock+ " items")
+                // console.log("quedan "+item.stock+ " items")
                 setCantidad(cantidad + 1)
                 item.cantidad++
                 item.stock--
                 setItemsCarrito ((prevItems) => [...prevItems]) // renderiza el context para actualizar los valores
             }else if(item.stock>=1){
-                console.log("quedan "+item.stock+ " items")
+                // console.log("quedan "+item.stock+ " items")
                 setCantidad(cantidad + 1)
                 item.cantidad++
                 item.stock--
                 setItemsCarrito ((prevItems) => [...prevItems]) // renderiza el context para actualizar los valores
-            }else{
-                console.log("no hay mas")
             }
         }
 

@@ -6,15 +6,12 @@ function Cart (){
     const {itemsCarrito} = useContext(CartContext)
     const [cantidad, setCantidad] = useState(0)
 
-    console.log('ITEMS CARRITO\n')
-    console.log(itemsCarrito)
-    console.log('---------------\n')
-
+    // console.log('ITEMS CARRITO\n')
+    // console.log(itemsCarrito)
+    // console.log('---------------\n')
 
     useEffect(()=>{
-        console.log("actualiza carrito")
         setCantidad(itemsCarrito.length)
-
     },[itemsCarrito])
     
     if(cantidad >= 1) {
