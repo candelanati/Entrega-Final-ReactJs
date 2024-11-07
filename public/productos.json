@@ -7,7 +7,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":1,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "OSCURO ÉXTASIS",
@@ -16,7 +17,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":2,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Short n' Sweet",
@@ -25,7 +27,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":3,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Currents",
@@ -34,7 +37,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":4,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Across the spiderverse",
@@ -43,7 +47,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":5,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Happier than ever",
@@ -52,7 +57,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":6,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Graduation",
@@ -61,7 +67,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":7,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "To pimp a butterfly",
@@ -70,7 +77,8 @@
             "color": "oscuro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":8,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Across the spiderverse",
@@ -79,7 +87,8 @@
             "color": "claro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":9,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Currents",
@@ -88,7 +97,8 @@
             "color": "claro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":10,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Graduation",
@@ -97,7 +107,8 @@
             "color": "claro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":11,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Happier than ever",
@@ -106,7 +117,8 @@
             "color": "claro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":12,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "OSCURO ÉXTASIS",
@@ -115,7 +127,8 @@
             "color": "claro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":13,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "Short n' Sweet",
@@ -124,7 +137,8 @@
             "color": "claro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":14,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         },
         {
             "titulo": "To pimp a butterfly",
@@ -133,7 +147,8 @@
             "color": "claro",
             "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odio corrupti enim unde saepe consectetur culpa minima sed tempora voluptatibus!",
             "id":15,
-            "cantidad":0
+            "cantidad":0,
+            "stock": 10
         }
     ]
 }
