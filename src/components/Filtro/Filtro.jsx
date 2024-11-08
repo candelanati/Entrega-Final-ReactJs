@@ -3,6 +3,9 @@ import './Filtro.css'
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { ProductBox } from '../Card/Card';
+import { getDocs } from 'firebase/firestore';
+import BBDD from "../../config/firebase";
+import { collection } from 'firebase/firestore';
 
 function Filtro (){
     const path = useParams()
@@ -11,19 +14,18 @@ function Filtro (){
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('/productos.json')
-        .then((res) => res.json())
-        .then((data) => {
-            const productos = data.Productos
-            const filtrados = productos.filter((p) => p.color === filtro)
-            setData(filtrados);
+        const collectionsRef = collection(BBDD.db, "productos");
+        getDocs(collectionsRef).then((snaps)=> {
+            const { docs } = snaps
+            const list = docs.map((doc) => ({...doc.data(), id:doc.id}))
+            const filtrados = list.filter((p) => p.color === filtro)
+            setData(filtrados)
         })
-        .catch((error) => console.error('Error al cargar el JSON:', error));
     }, [filtro]);
-    
+
     if(data.length===0){
         return(
-            <p>No se encontro ningun producto.</p>
+            <p className="loading">Cargando...</p>
         )
     }
 
