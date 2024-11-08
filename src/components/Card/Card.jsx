@@ -15,7 +15,6 @@ const [data, setData] = useState([])
         getDocs(collectionsRef).then((snaps)=> {
             const { docs } = snaps
             const list = docs.map((doc) => ({...doc.data(), id:doc.id}))
-            console.log(list)
             setData(list)
         })
     }, []);

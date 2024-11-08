@@ -10,7 +10,6 @@ import ButtonAddCart from '../ButtonAddCart/ButtonAddCart.jsx'
 function Descripcion (){
     const path = useParams()
     const idProducto = path.id
-    console.log("id:" + idProducto)
 
     const [data, setData] = useState([]);
     useEffect(() => {
@@ -18,7 +17,6 @@ function Descripcion (){
         getDocs(collectionsRef).then((snaps)=> {
             const { docs } = snaps
             const list = docs.map((doc) => ({...doc.data(), id:doc.id}))
-            console.log(list)
             setData(list)
         })
     }, []);
