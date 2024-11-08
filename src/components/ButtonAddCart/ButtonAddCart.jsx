@@ -70,6 +70,9 @@ function ButtonAddCart ({item}){
             </>
         )
     }
+    else{
+        <p>No hay stock para este producto</p>
+    }
     return(
             <>
                 <button className='boton-comprar' onClick={()=>sumaElemento()}>{agregaACarrito}</button>
