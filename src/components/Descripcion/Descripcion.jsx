@@ -1,29 +1,32 @@
 import React from 'react';
 import './Descripcion.css'
+import BBDD from "../../config/firebase";
+import { collection } from 'firebase/firestore';
+import { getDocs } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ButtonAddCart from '../ButtonAddCart/ButtonAddCart.jsx'
 
 function Descripcion (){
     const path = useParams()
-    const idProducto = parseInt(path.id)
-    
+    const idProducto = path.id
+    console.log("id:" + idProducto)
 
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('/productos.json')
-        .then((res) => res.json())
-        .then((data) => {
-            
-            setData(data.Productos);
+        const collectionsRef = collection(BBDD.db, "productos");
+        getDocs(collectionsRef).then((snaps)=> {
+            const { docs } = snaps
+            const list = docs.map((doc) => ({...doc.data(), id:doc.id}))
+            console.log(list)
+            setData(list)
         })
-        .catch((error) => console.error('Error al cargar el JSON:', error));
     }, []);
     
     const producto = data.find((p) => p.id === idProducto);
     
     if (!producto) {
-        return <h2>Producto no encontrado</h2>;
+        return <h2 className="loading">Cargando...</h2>;
     }
     return(
         <>
@@ -33,7 +36,7 @@ function Descripcion (){
         <div className='div-descripcion-entera'>
             
             <div className='div-card-poster'>
-                <img src={`/${producto.imagen}`} alt={"portada poster "+producto.titulo} />
+                <img src={producto.imagen} alt={"portada poster "+producto.titulo} />
             </div>
             <div className='info-descripcion-producto'>
                 <h2>Detalles:</h2>

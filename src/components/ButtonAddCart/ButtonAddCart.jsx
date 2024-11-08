@@ -40,7 +40,7 @@ function ButtonAddCart ({item}){
             borrarItem(item)
         }
 
-    if(item.cantidad>=1){
+    if(item.cantidad >= 1){
         return(
             <>
                 <div className="suma-y-resta-div">
@@ -70,14 +70,10 @@ function ButtonAddCart ({item}){
     }
     return(
             <>
-            {/* ver stock */}
                 <button className='boton-comprar' onClick={()=>sumaElemento()}>{agregaACarrito}</button>
             </>
     )
 }
-
-
-
 
 
 export default ButtonAddCart

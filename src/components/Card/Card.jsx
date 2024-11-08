@@ -11,13 +11,6 @@ function Card (){
 const [data, setData] = useState([])
 
     useEffect(() => {
-        // fetch('/productos.json')
-        // .then((res) => res.json())
-        // .then((data) => {
-        //     // console.log(data);
-        //     setData(data.Productos);
-        // })
-        // .catch((error) => console.error('Error al cargar el JSON:', error));
         const collectionsRef = collection(BBDD.db, "productos");
         getDocs(collectionsRef).then((snaps)=> {
             const { docs } = snaps
