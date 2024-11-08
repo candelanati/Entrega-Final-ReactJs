@@ -137,3 +137,10 @@
     gap: 10px;
     position:relative;
 }
+
+.no-stock{
+    margin-top: 40px;
+    font-style: italic;
+    color:rgb(156, 27, 27);
+    font-size: small;
+}
