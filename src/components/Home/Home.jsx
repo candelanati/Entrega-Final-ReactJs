@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
-import Logo from '../Logo/Logo';
 import Card from '../Card/Card';
 
 function Home (){

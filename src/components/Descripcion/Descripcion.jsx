@@ -33,9 +33,7 @@ function Descripcion (){
         <div className='div-descripcion-entera'>
             
             <div className='div-card-poster'>
-                
                 <img src={`/${producto.imagen}`} alt={"portada poster "+producto.titulo} />
-                
             </div>
             <div className='info-descripcion-producto'>
                 <h2>Detalles:</h2>

@@ -29,7 +29,7 @@ const CartProvider = ({children}) =>{
         borraCarrito
     }
 
-    console.log(itemsCarrito)
+    // console.log(itemsCarrito)
 
     return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }

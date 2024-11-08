@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 
 import './ButtonAddCart.css'
 import { CartContext } from "../Context/CartContext";
@@ -10,18 +10,15 @@ const cantidadCarrito = <svg xmlns="http://www.w3.org/2000/svg" height="24px" vi
 function ButtonAddCart ({item}){
     const {agregarCarrito , borrarItem  , setItemsCarrito} = useContext(CartContext)
 
-    const [cantidad, setCantidad] = useState(0)
         function sumaElemento(){
-            if(cantidad<1){
+            if(item.cantidad<1){
                 agregarCarrito(item)
                 // console.log("quedan "+item.stock+ " items")
-                setCantidad(cantidad + 1)
                 item.cantidad++
                 item.stock--
                 setItemsCarrito ((prevItems) => [...prevItems]) // renderiza el context para actualizar los valores
             }else if(item.stock>=1){
                 // console.log("quedan "+item.stock+ " items")
-                setCantidad(cantidad + 1)
                 item.cantidad++
                 item.stock--
                 setItemsCarrito ((prevItems) => [...prevItems]) // renderiza el context para actualizar los valores
@@ -30,7 +27,6 @@ function ButtonAddCart ({item}){
 
         function restaElemento(){
             item.cantidad--
-            setCantidad(cantidad - 1)
             if(item.cantidad == 0) {
                 borrarItem(item)
             }
@@ -41,11 +37,10 @@ function ButtonAddCart ({item}){
         function eliminaElemento(){
             item.stock=item.stock+item.cantidad
             item.cantidad = 0
-            setCantidad(0)
             borrarItem(item)
         }
 
-    if(cantidad>=1){
+    if(item.cantidad>=1){
         return(
             <>
                 <div className="suma-y-resta-div">
@@ -76,7 +71,7 @@ function ButtonAddCart ({item}){
     return(
             <>
             {/* ver stock */}
-                <button className='boton-comprar' onClick={()=>sumaElemento(cantidad)}>{agregaACarrito}</button>
+                <button className='boton-comprar' onClick={()=>sumaElemento()}>{agregaACarrito}</button>
             </>
     )
 }
