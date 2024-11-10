@@ -23,6 +23,7 @@ const CartProvider = ({children}) =>{
 
     const borraCarrito =()=>{
         setItemsCarrito([])
+        itemsCarrito.map( (item) => item.cantidad = 0 )
     }
 
     const value = {

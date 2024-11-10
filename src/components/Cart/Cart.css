@@ -17,11 +17,57 @@
     border-radius: 2px;
     
     backdrop-filter: blur(10px);
-
-
 }
 
 .cuadro-color {
     font-size: small;
     opacity: 70%;
+}
+.hr-borra-carrito-boton{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.borra-carrito-boton{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: auto;
+    padding-inline: 8px;
+    border: 1.5px solid;
+    background-color: #080808;
+    color: #d9d9d9;
+    border-radius: 10px;
+    width: fit-content;
+    height: 30px;
+    font-weight: 500;
+}
+.borra-carrito-boton:hover{
+    color: #080808;
+    background-color: transparent;
+    
+}
+
+.comprar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-inline: 8px;
+    border: 1.5px solid;
+    color: #080808;
+    border-color: #080808;
+
+    border-radius: 10px;
+    width: fit-content;
+    height: 30px;
+    font-weight: 500;
+}
+.comprar:hover{
+    background-color: #080808;
+    color: #d9d9d9;
+
+}
+
+.carrito-botones-continuar{
+    display: flex;
+    
 }

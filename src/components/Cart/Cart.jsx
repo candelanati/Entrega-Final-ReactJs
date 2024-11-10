@@ -3,7 +3,7 @@ import "./Cart.css"
 import {CartContext} from "../Context/CartContext"
 
 function Cart (){
-    const {itemsCarrito} = useContext(CartContext)
+    const {itemsCarrito, borraCarrito} = useContext(CartContext)
     const [cantidad, setCantidad] = useState(0)
 
     // console.log('ITEMS CARRITO\n')
@@ -25,6 +25,11 @@ function Cart (){
                     {itemsCarrito.map(el => {
                         return <p key={el.id}>{el.titulo} <span className="cuadro-color">({el.color})</span> x{el.cantidad}</p>
                     }) }
+                    <hr className="hr-borra-carrito-boton"/>
+                    <div className="carrito-botones-continuar">
+                        <button className="comprar">comprar</button>
+                        <button onClick={borraCarrito} className="borra-carrito-boton">borrar carrito</button>
+                    </div>
                 </div>
             </>
         )
