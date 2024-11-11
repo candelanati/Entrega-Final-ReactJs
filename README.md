@@ -1,4 +1,4 @@
-#E-commerce Front-End Application
+# E-commerce Front-End Application
 
 ## Descripción del Proyecto
 Este repositorio contiene el código fuente de una Single Page Application (SPA) de e-commerce, desarrollada como proyecto final para el curso de ReactJs dentro de la carrera de Desarrollo Full Stack en CODERHOUSE. La aplicación está enfocada en la venta de cuadros artísticos y se ha construido utilizando React para la creación de la interfaz de usuario y Firestore de Firebase para la gestión de la base de datos.
